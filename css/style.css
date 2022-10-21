@@ -1,0 +1,229 @@
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+.container{
+   background: url(../img/nebo.jpg) center/cover no-repeat;
+   width: 100%;
+   padding: 400px;
+}
+.container:hover{
+   transition-duration: 3s;
+   transition-delay: 1s;
+   background: url(../img/horizontal_road.jpg) center/cover no-repeat;
+}
+.propeller{
+   padding-left: 80px;
+	border-radius: 50%;
+   width: 250px;
+	height: 60px;
+	background-color:grey;
+   z-index: 100;
+   position: absolute;
+   top: 50px;
+   left: 350px;
+   border: 15px solid #000000;
+   animation-name: propeller;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+@keyframes propeller{
+   0%{
+   transform: rotate(0deg);
+   }
+   100%{
+   transform: rotate(360deg);
+   }
+}
+.line{
+   width: 10px;
+	height: 30px;
+	background-color: black;
+   position: absolute;
+   top: 100px;
+   left: 470px;
+}
+.body{
+   width: 250px;
+   height: 150px;
+   border-radius: 30px 90px 30px 30px;
+   background-color: yellow;
+   position: absolute;
+   top: 130px;
+   left: 350px;
+   border: 5px solid #000000;
+}
+.window{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color:grey;
+   position: absolute;
+   top: 180px;
+   left: 380px;
+   border: 5px solid #000000;
+}
+.cabin{
+   width: 80px;
+   height: 80px;
+   border-radius: 0px 90px 30px 0px;
+   background-color:grey;
+   position: absolute;
+   top: 135px;
+   left: 500px;
+   border: 5px solid #000000;
+}
+.wheelone{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color:black;
+   position: absolute;
+   top: 280px;
+   left: 380px;
+}
+.wheeltwo{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color:black;
+   position: absolute;
+   top: 280px;
+   left: 510px;
+}
+.tail{
+   width: 150px;
+   height: 30px;
+   background-color:yellow;
+   position: absolute;
+   top: 150px;
+   left: 205px;
+   border: 5px solid #000000;
+}
+.back{
+   display: inline-block;
+	border-radius: 50%;
+   width: 60px;
+	height: 60px;
+	background-color:grey;
+   z-index: 100;
+   position: absolute;
+   top: 110px;
+   left: 160px;
+   border: 10px solid #000000;
+}
+.one{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color:grey;
+   position: absolute;
+   top: 280px;
+   left: 380px;
+   transform: scale(0.6);
+}
+.two{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color:grey;
+   position: absolute;
+   top: 280px;
+   left: 510px;
+   transform: scale(0.6);
+}
+
+.button{
+   width: 250px;
+   height: 30px;
+   text-align: center;
+   min-height: 30px;
+   padding: 30px 30px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 18px;
+   border-radius: 10px;
+   position: relative;
+   top: 0px;
+
+   color: #fff;
+   background-color: #5e5373;
+   box-shadow: 0 5px 0px #3c354a;
+   transition-duration: 1s;
+}
+.button:hover{
+   top: 2px;
+   box-shadow: 0 3px 0px #3c354a;
+   background-color: #18b5a4;
+   }
+.copter{
+   animation: copter 4s ease forwards;
+  
+}
+@keyframes copter{
+      0%{
+      transform: translate(-200%, 0px);
+      }
+      100%{
+      transform: translate(100px, 0px);
+      }
+}
+
+.page{
+   background-color: grey;
+   width: 500px;
+   height: 250px;
+   margin-top: 50px;
+   margin-left: 100px;
+   line-height: 1.5;
+   margin-bottom: 30px;
+   text-align: center;
+}
+.title {
+	font-weight: 900;
+	font-size: 40px;
+	animation: title 3s ease forwards;
+   animation-iteration-count: infinite;
+}
+
+.subtitle {
+   font-weight: 700;
+	font-size: 24px;
+	animation: subtitle 3s ease 0.5s backwards;
+   animation-iteration-count: infinite;
+}
+
+.text {
+   font-weight: 400;
+	animation: text 2s ease 1s forwards;
+	transform: translate(0px, 50%);
+	opacity: 0;
+   animation-iteration-count: infinite;
+}
+@keyframes title {
+   0%{
+   transform: translate(-100%, 0px);
+   }
+   100%{
+   transform: translate(0px, 0px);
+   }
+}
+@keyframes subtitle {
+   0%{
+   transform: translate(300%, 0px);
+   }
+   100%{
+   transform: translate(0px, 0px);
+   }
+}
+
+@keyframes text {
+	0% {
+	}
+	100% {
+		transform: translate(0px, 0%);
+		opacity: 1;
+	}
+}
